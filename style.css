@@ -235,3 +235,43 @@ footer {
         margin: 0.5rem 0;
     }
 }
+
+.page-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.opportunities-page .filters,
+.resources-page .resource-cards,
+.events-page .event-cards,
+.testimonials-page .testimonial-cards,
+.dashboard-page .dash-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.resource-card,
+.opportunity-card,
+.event-card,
+.testimonial-card,
+.dash-card {
+    background: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.resource-card:hover,
+.opportunity-card:hover,
+.event-card:hover,
+.testimonial-card:hover,
+.dash-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(255,107,53,0.3);
+}
+
+.event-card button {
+    width: 100%;
+}
+
